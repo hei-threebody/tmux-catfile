@@ -2,8 +2,8 @@
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-current_track="#($CURRENT_DIR/scripts/cmd.sh)"
-current_track_interpolation="\#{current_cmd}"
+current_cmd="#($CURRENT_DIR/scripts/cmd.sh)"
+current_cmd_interpolation="\#{current_cmd}"
 
 get_tmux_option() {
 	local option=$1
